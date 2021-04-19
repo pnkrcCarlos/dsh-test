@@ -20,6 +20,8 @@ class Granja(models.Model):
     nombre = models.CharField(max_length=50, null=False)
     avicola = models.ForeignKey(Avicola, related_name='granjas',
                                 on_delete=models.CASCADE, null=False)
+    capacidad = models.DecimalField(
+        max_digits=9, decimal_places=2, null=False)
     superficie = models.DecimalField(
         max_digits=9, decimal_places=2, null=False)
     history = HistoricalRecords()
