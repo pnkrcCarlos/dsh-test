@@ -1,0 +1,4 @@
+# wtf is this?
+
+Este directorio contiene el proyecto donde pruebo django-simple-history
+
